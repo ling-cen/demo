@@ -1,0 +1,62 @@
+package com.imooc.view1;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.TextView;
+
+public class MainActivity extends Activity {
+	//第一步：定义TextView类（根据Avtivity布局文件中定义的控件类型
+	private TextView textView;
+	//
+	private Button button_1;
+	//
+	private int sum = 0;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		//返回的内容是View类型；需要向下转型
+		//
+		textView = (TextView)findViewById(R.id.textView01);
+		System.out.println("***************是否回去成功："+textView);
+		textView.setText("我修改了这里的内容");
+		//获取控件对象
+		button_1 =(Button)findViewById(R.id.button_1);
+		
+	}
+	class ButtonListenter implements OnClickListener{
+
+		@Override
+		public void onClick(View v) {
+			//
+			sum++;
+			System.out.print("当前点击的次数:"+sum);
+		}
+		
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// Handle action bar item clicks here. The action bar will
+		// automatically handle clicks on the Home/Up button, so long
+		// as you specify a parent activity in AndroidManifest.xml.
+		int id = item.getItemId();
+		if (id == R.id.action_settings) {
+			return true;
+		}
+		return super.onOptionsItemSelected(item);
+	}
+}

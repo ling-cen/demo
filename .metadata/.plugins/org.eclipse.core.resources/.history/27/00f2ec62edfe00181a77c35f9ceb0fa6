@@ -1,0 +1,11 @@
+wifi_name<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Wifi_App</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="wifi">无线局域网</string>
+    <string name="wifi_off">关闭局域网</string>
+    <string name="wifi_on">打开局域网</string>
+
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_launcher"
+        android:background="#0000ff"
+        android:scaleType="fitCenter"        />
+<!-- 
+center :等比放大，填充整个view
+centerGrop小于或等于当前view的大小
+centerInside  完整的居中显示
+fitXY  使图拍呢填充整个view
+fitStart  显示在上部
+fitEnd 显示view的下方
+fitCenter   小于设置的高度和宽度时，放大剧中显示xs
+ -->
+    <ImageButton
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerInside"
+        android:background="#FFF00ff"
+        android:src="@drawable/ppig" />
+ 
+</LinearLayout>

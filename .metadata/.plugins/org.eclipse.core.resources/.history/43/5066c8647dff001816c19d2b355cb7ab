@@ -1,0 +1,15 @@
+package com.example.ui_radiobutton;
+
+public class Foods {
+	//菜品名称
+	private String name;
+	//图片
+	private int drawable;
+	//味道
+	private boolean isHot;
+	private boolean isFish;
+	private boolean isSour;
+	//价格
+	private float price;
+
+}

@@ -1,0 +1,51 @@
+package com.imooc.ui_checkbox;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.Toast;
+import android.widget.CompoundButton.OnCheckedChangeListener;
+
+public class MainActivity extends Activity {
+	private CheckBox cb_game, cb_travel, cb_read;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+	}
+
+	protected void initView() {
+		cb_game = (CheckBox) findViewById(R.id.cb_game);
+		cb_travel = (CheckBox) findViewById(R.id.cb_travel);
+	    cb_read = (CheckBox) findViewById(R.id.cb_read);
+		
+	}
+
+	class CheckBoxListener implements OnCheckedChangeListener {
+
+		@Override
+		public void onCheckedChanged(CompoundButton buttonView, 
+				boolean isChecked) {
+			//当选择发生变化时触发
+			CheckBox checkBox = (CheckBox)buttonView;
+			//监听是否点击
+			switch(checkBox.getId()) {
+			case R.id.cb_game:
+				Toast.makeText(MainActivity.this, "电竞:"+isChecked, Toast.LENGTH_SHORT).show();
+				break;
+			case R.id.cb_travel:
+				Toast.makeText(MainActivity.this, "旅游"+isChecked,Toast.LENGTH_SHORT).show();
+				break;
+			case R.id.cb_read:
+				Toast.makeText(MainActivity.this, "阅读"+isChecked,Toast.LENGTH_SHORT).show();
+				break;
+				
+			}
+		}
+	}
+}

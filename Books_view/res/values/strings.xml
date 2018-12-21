@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Books_view</string>
+    <string name="book_image">此处为图书的封面</string>
+    <string name="book_name">书名</string>
+    <string name="book_desc">概述</string>
+    <string name="book_author">作者</string>
+    <string name="book_date">日期</string>
+
+</resources>

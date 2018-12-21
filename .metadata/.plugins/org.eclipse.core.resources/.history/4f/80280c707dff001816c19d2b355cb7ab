@@ -1,0 +1,8 @@
+package com.example.ui_radiobutton;
+
+public class Persion {
+	private String usename;
+	private String sex;
+	private Foods food;
+
+}

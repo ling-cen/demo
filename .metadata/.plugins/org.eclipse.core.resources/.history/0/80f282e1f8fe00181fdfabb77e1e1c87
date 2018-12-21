@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/wifi" />
+
+        <ToggleButton
+            android:id="@+id/wifi_off"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:textOff="打开局域网"
+            android:textOn="关闭局域网" >
+        </ToggleButton>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF" >
+
+            <RadioButton
+                android:id="@+id/imooc_offoce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/office" />
+
+            <RadioButton
+                android:id="@+id/imooc_meeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/meeting" />
+
+            <RadioButton
+                android:id="@+id/imooc_visitor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/visitor" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="#FFFFFF"
+        android:contentDescription="@string/alt"
+        android:scaleType="fitStart"
+        android:src="@drawable/meeting" />
+
+    <TextView
+        android:id="@+id/is_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/isTime" />
+</LinearLayout>

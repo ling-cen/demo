@@ -1,0 +1,11 @@
+package com.imooc.ui_button;
+
+import android.app.Activity;
+import android.os.Bundle;
+
+public class Fourth extends Activity {
+	protected void OnCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+	}
+
+}

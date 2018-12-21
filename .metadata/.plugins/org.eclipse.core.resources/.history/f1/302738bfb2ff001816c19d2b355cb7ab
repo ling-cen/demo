@@ -1,0 +1,13 @@
+package com.imooc.libarybook;
+
+import java.util.Date;
+
+public class Books {
+	//书名
+	private String book_name;
+	//时间
+	private Date date;
+	
+	
+
+}

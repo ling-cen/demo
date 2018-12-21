@@ -1,0 +1,13 @@
+package demo;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Test {
+	public static void main(String [] args) {
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		Iterator it = list.iterator();
+		System.out.println(it.next());
+	}
+
+}

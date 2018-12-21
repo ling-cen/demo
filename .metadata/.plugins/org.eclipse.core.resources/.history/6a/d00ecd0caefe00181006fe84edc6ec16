@@ -1,0 +1,74 @@
+package com.imooc.ui_checkbox;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.Toast;
+import android.widget.CompoundButton.OnCheckedChangeListener;
+import android.widget.TextView;
+
+public class MainActivity extends Activity {
+	private CheckBox cb_game, cb_travel, cb_read;
+	private Button btn_all,btn_notall,getLike;
+	private TextView showLike;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.checkbox_layout);
+		this.initView();
+		//获取监听对象
+		CheckBoxListener listener = new CheckBoxListener();
+		//为按钮设置监听对象
+		cb_game.setOnCheckedChangeListener(listener);
+		cb_travel.setOnCheckedChangeListener(listener);
+		cb_read.setOnCheckedChangeListener(listener);
+	}
+
+	protected void initView() {
+		cb_game = (CheckBox) findViewById(R.id.cb_game);
+		cb_travel = (CheckBox) findViewById(R.id.cb_travel);
+	    cb_read = (CheckBox) findViewById(R.id.cb_read);
+	    btn_all = (Button)findViewById(R.id.btn_all);
+	    btn_notall = (Button)findViewById(R.id.btn_notall);
+	    getLike = (Button) findViewById(R.id.getLike);
+	    showLike = (TextView) findViewById(R.id.showLike);
+		
+	}
+
+	class CheckBoxListener implements OnCheckedChangeListener {
+		@Override
+		public void onCheckedChanged(CompoundButton buttonView, 
+				boolean isChecked) {
+			//当选择发生变化时触发
+			CheckBox checkBox = (CheckBox)buttonView;
+			//监听是否点击
+			switch(checkBox.getId()) {
+			case R.id.cb_game:
+				Toast.makeText(MainActivity.this, "电竞:"+isChecked, Toast.LENGTH_SHORT).show();
+				break;
+			case R.id.cb_travel:
+				Toast.makeText(MainActivity.this, "旅游"+isChecked,Toast.LENGTH_SHORT).show();
+				break;
+			case R.id.cb_read:
+				Toast.makeText(MainActivity.this, "阅读"+isChecked,Toast.LENGTH_SHORT).show();
+				break;	
+			}
+		}
+	}
+	class ButtonClickListener implements OnClickListener{
+
+		@Override
+		public void onClick(View v) {
+			
+			
+		}
+		
+	}
+}

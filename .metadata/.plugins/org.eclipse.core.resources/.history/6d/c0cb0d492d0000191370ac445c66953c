@@ -1,0 +1,29 @@
+package com.imooc.libarybook;
+
+import java.util.Date;
+
+public class Persion {
+	private String usename;
+	private Books book;
+	private Date time;
+	
+	public String getUsename() {
+		return usename;
+	}
+	public void setUsename(String usename) {
+		this.usename = usename;
+	}
+	public Books getBook() {
+		return book;
+	}
+	public void setBook(Books book) {
+		this.book = book;
+	}
+	public Date getTime() {
+		return time;
+	}
+	public void setTime(Date time) {
+		this.time = time;
+	}
+
+}
