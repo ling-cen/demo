@@ -1,0 +1,17 @@
+package com.imooc.libarybook;
+
+import java.util.Date;
+
+public class Books {
+	//书名
+	private String book_name;
+	//
+	private int book_ico;
+	//书籍类型
+	private boolean isHistory;
+	private boolean isSupense;
+	private boolean isLiter;
+	private Date inTime;  //归还时间
+	private Date outTime;  //借出时间
+
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UI_TextView</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="textViwe_image">带图片的TextView</string>
+    <string name="string_test">文字太多le，使用string设置</string>
+
+</resources>

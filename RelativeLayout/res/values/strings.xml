@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RelativeLayout</string>
+    <string name="hello_world">Hello 01!</string>
+    <string name="action_settings">Settings</string>
+     <string name="hello_world_1">Hello 02!</string>
+      <string name="hello_world_3">Hello 03</string>
+
+</resources>

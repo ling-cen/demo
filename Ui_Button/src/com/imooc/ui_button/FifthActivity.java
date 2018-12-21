@@ -1,0 +1,43 @@
+package com.imooc.ui_button;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.Toast;
+
+public class FifthActivity extends Activity {
+	private Button btn_1;
+	private Button btn_2;
+
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.button_layout);
+		
+		btn_1 = (Button) findViewById(R.id.button_1);
+		btn_2 = (Button) findViewById(R.id.button_2);
+		
+		btn_1.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+			 Toast.makeText(FifthActivity.this,"点击了第一个按钮", Toast.LENGTH_SHORT).show();
+				
+			}
+			
+		});
+	btn_2.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+			 Toast.makeText(FifthActivity.this,"点击了第二个按钮", Toast.LENGTH_SHORT).show();
+				
+			}
+			
+		});
+		
+		
+	}
+
+}

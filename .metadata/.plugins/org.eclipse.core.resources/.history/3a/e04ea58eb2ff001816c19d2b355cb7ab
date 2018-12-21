@@ -1,0 +1,11 @@
+package com.imooc.libarybook;
+
+import java.util.Date;
+
+public class Books {
+	private String book_name;
+	private Date date;
+	
+	
+
+}

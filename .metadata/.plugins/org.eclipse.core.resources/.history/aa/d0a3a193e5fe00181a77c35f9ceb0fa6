@@ -1,0 +1,26 @@
+package com.example.ui_datepicker;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.DatePicker;
+import android.widget.TimePicker;
+
+public class MainActivity extends Activity {
+	private TimePicker time_picker;
+	private DatePicker date_picker;
+	
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.date_picker);
+
+	}
+	private void initView() {
+		time_picker = (TimePicker) findViewById(R.id.time_picker);
+		date_picker = (DatePicker) findViewById(R.id.date_picker);
+
+	}
+}

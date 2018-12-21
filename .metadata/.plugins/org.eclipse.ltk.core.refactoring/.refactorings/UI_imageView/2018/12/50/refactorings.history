@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;UI_imageView/res/drawable/u=1560702496,3717442945&amp;fm=11&amp;gp=0.jpg&apos; to &apos;pig.jpg&apos;" description="Rename resource &apos;u=1560702496,3717442945&amp;fm=11&amp;gp=0.jpg&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="res/drawable/u=1560702496,3717442945&amp;fm=11&amp;gp=0.jpg" name="pig.jpg" stamp="1544682567617" updateReferences="true"/>
+</session>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ops_value" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkorange"
+        android:text="@string/textViwe_image" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/firebrick" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/background"
+        android:text="" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="文字太多了" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置文字大小"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:text="官网：http://www.imooc.com" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="phone"
+        android:text="+86 13598840056" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableBottom="@drawable/ic_launcher"
+        android:drawableLeft="@drawable/ic_launcher"
+        android:drawableRight="@drawable/ic_launcher"
+        android:drawableTop="@drawable/ic_launcher"
+        android:gravity="center"
+        android:text="在我的周围添加图片" />
+
+    <!--
+         <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/goldenrod"
+        android:ellipsize="end"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="@string/string_test"
+        android:textColor="@color/cyan"
+        android:textIsSelectable="true" />
+    -->
+    <!--
+     设置跑马灯不生效问题：必须要设置的几个属性
+  android:ellipsize="marquee"//文字显示不完全，以什么方式显示（这里就以滚动的行形式）
+android:focusable="true"//获得焦点
+android:focusableInTouchMode="true"//获得触摸焦点
+android:marqueeRepeatLimit="marquee_forever"//滚动模式
+android:scrollHorizontally="true"//横向滚动
+android:singleLine="true"//以单行文本显示
+    -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="@string/string_test"
+        android:textColor="@color/wheat" />
+</LinearLayout>

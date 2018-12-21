@@ -1,0 +1,18 @@
+package demo;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Test {
+	public static void main(String [] args) {
+//		ArrayList<Integer> list = new ArrayList<Integer>();
+//		Iterator it = list.iterator();
+//		System.out.println(it.next());
+		String s1  = "123";
+		System.out.println(s1.concat("abc"));
+		double a = 1.23f;
+		System.out.println(a);
+		
+	}
+
+}
